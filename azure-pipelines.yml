@@ -1,3 +1,7 @@
 pool: MyAgentPool
+- task: DotNetCoreCLI@2
+  inputs:
+    azureSubscription: 'Chaki_サブスクリプション(ca91e91e-6663-4aba-8bd5-23aa3d5dfe93)'
+    command: 'build'
 steps:
 - bash: echo hello world
